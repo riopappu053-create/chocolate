@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cacao & Velvet - Prestigious Imported Chocolate Brands</title>
+    <!-- Exact Title Icon Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><rect width='512' height='512' rx='120' fill='url(%23grad)'/><defs><linearGradient id='grad' x1='0%' y1='0%' x2='100%' y2='100%'><stop offset='0%' stop-color='%23D4AF37'/><stop offset='100%' stop-color='%233D2314'/></linearGradient></defs><path fill='%23ffffff' d='M256 112c-35 55-64 88-64 136 0 35.3 28.7 64 64 64s64-28.7 64-64c0-48-29-81-64-136z'/></svg>">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        chocoGold: '#D4AF37',
+                        chocoBronze: '#A67B5B',
+                        chocoDark: '#120E0B',
+                        chocoCard: '#1C1612',
+                        chocoRich: '#2C1E14',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-weight: 500;
+        }
+        .font-serif-luxury {
+            font-family: 'Playfair Display', serif;
+        }
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #1c1612;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #D4AF37;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body class="bg-stone-50 text-stone-800 dark:bg-chocoDark dark:text-stone-100 transition-colors duration-300">
+
+    <!-- ================= EXACT ADVANCED FLOATING NAVBAR ================= -->
+    <header class="fixed top-4 left-0 right-0 z-50 px-4 sm:px-8">
+        <nav class="max-w-7xl mx-auto bg-white/90 dark:bg-chocoDark/90 backdrop-blur-md border border-stone-200 dark:border-stone-800 rounded-2xl shadow-xl px-5 py-3.5 flex items-center justify-between transition-all">
+            
+            <!-- Brand Logo -->
+            <a href="index.html" class="flex items-center gap-2.5 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-chocoGold to-chocoRich flex items-center justify-center text-white font-bold text-lg shadow-lg shadow-chocoGold/30 group-hover:scale-105 transition-transform">
+                    <i class="fa-solid fa-cookie-bite"></i>
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-serif-luxury text-lg font-bold tracking-tight text-stone-900 dark:text-white leading-none">Cacao & Velvet</span>
+                    <span class="text-[10px] uppercase tracking-widest text-chocoGold font-semibold mt-0.5">Imported Confectionery</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links (Single-word Names + Home Dropdown with Scrollbar) -->
+            <div class="hidden lg:flex items-center gap-1 font-semibold text-sm">
+                
+                <!-- Home Dropdown with Scrollbar -->
+                <div class="relative group">
+                    <button class="px-4 py-2 rounded-xl text-stone-700 dark:text-stone-200 hover:text-chocoGold dark:hover:text-chocoGold hover:bg-stone-100 dark:hover:bg-stone-800/60 transition flex items-center gap-1.5">
+                        Home <i class="fa-solid fa-chevron-down text-xs transition-transform group-hover:rotate-180"></i>
+                    </button>
+                    <!-- Dropdown Menu with Scrollbar -->
+                    <div class="absolute top-full left-0 mt-2 w-52 bg-white dark:bg-chocoCard border border-stone-200 dark:border-stone-700 rounded-xl shadow-2xl py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-2 group-hover:translate-y-0 z-50 max-h-60 overflow-y-auto">
+                        <a href="index.html" class="block px-4 py-2.5 text-stone-700 dark:text-stone-200 hover:bg-chocoGold/10 hover:text-chocoGold text-xs font-semibold transition">Home 1 - Specialty Store</a>
+                        <a href="home-2.html" class="block px-4 py-2.5 text-stone-700 dark:text-stone-200 hover:bg-chocoGold/10 hover:text-chocoGold text-xs font-semibold transition">Home 2 - Artisan Vibe</a>
+                    </div>
+                </div>
+
+                <a href="about.html" class="px-4 py-2 rounded-xl text-stone-700 dark:text-stone-200 hover:text-chocoGold dark:hover:text-chocoGold hover:bg-stone-100 dark:hover:bg-stone-800/60 transition">About</a>
+                <a href="brands.html" class="px-4 py-2 rounded-xl text-chocoGold dark:text-chocoGold font-bold bg-chocoGold/10 hover:bg-chocoGold/20 transition">Brands</a>
+                <a href="products.html" class="px-4 py-2 rounded-xl text-stone-700 dark:text-stone-200 hover:text-chocoGold dark:hover:text-chocoGold hover:bg-stone-100 dark:hover:bg-stone-800/60 transition">Products</a>
+                <a href="gifting.html" class="px-4 py-2 rounded-xl text-stone-700 dark:text-stone-200 hover:text-chocoGold dark:hover:text-chocoGold hover:bg-stone-100 dark:hover:bg-stone-800/60 transition">Gifting</a>
+                <a href="faq.html" class="px-4 py-2 rounded-xl text-stone-700 dark:text-stone-200 hover:text-chocoGold dark:hover:text-chocoGold hover:bg-stone-100 dark:hover:bg-stone-800/60 transition">FAQ</a>
+                <a href="contact.html" class="px-4 py-2 rounded-xl text-stone-700 dark:text-stone-200 hover:text-chocoGold dark:hover:text-chocoGold hover:bg-stone-100 dark:hover:bg-stone-800/60 transition">Contact</a>
+            </div>
+
+            <!-- Right Utilities & Action Button (Desktop) -->
+            <div class="hidden lg:flex items-center gap-3">
+                <!-- RTL Toggle Button -->
+                <button onclick="toggleRTL()" class="px-3 py-2 rounded-xl bg-stone-100 dark:bg-stone-800 text-stone-700 dark:text-stone-300 text-xs font-bold uppercase hover:bg-chocoGold hover:text-white transition shadow-sm" title="Toggle RTL/LTR">
+                    <span id="rtlBtnText">RTL</span>
+                </button>
+                <!-- Theme Toggle Button -->
+                <button onclick="toggleTheme()" class="w-10 h-10 rounded-xl bg-stone-100 dark:bg-stone-800 text-stone-700 dark:text-stone-300 flex items-center justify-center hover:bg-chocoGold hover:text-white transition shadow-sm" title="Toggle Dark/Light Mode">
+                    <i class="fa-solid fa-moon dark:hidden"></i>
+                    <i class="fa-solid fa-sun hidden dark:block"></i>
+                </button>
+                <!-- CTA Button -->
+                <a href="gifting.html" class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-chocoGold to-chocoBronze text-white font-bold text-xs uppercase tracking-wider shadow-lg shadow-chocoGold/30 hover:shadow-chocoGold/50 hover:scale-[1.02] active:scale-[0.98] transition">
+                    Gifting
+                </a>
+            </div>
+
+            <!-- Mobile Hamburger Button -->
+            <div class="flex items-center gap-2 lg:hidden">
+                <button id="mobileMenuBtn" onclick="toggleMobileMenu()" class="w-10 h-10 rounded-xl bg-stone-100 dark:bg-stone-800 text-stone-800 dark:text-white flex items-center justify-center text-lg focus:outline-none">
+                    <i class="fa-solid fa-bars" id="menuIcon"></i>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Mobile Drawer Navigation -->
+        <div id="mobileMenu" class="hidden lg:hidden mt-2 bg-white dark:bg-chocoCard border border-stone-200 dark:border-stone-800 rounded-2xl shadow-2xl p-5 max-h-[85vh] overflow-y-auto transition-all">
+            <div class="flex items-center justify-between gap-2 pb-4 mb-3 border-b border-stone-200 dark:border-stone-700">
+                <button onclick="toggleRTL()" class="flex-1 py-2.5 px-3 rounded-xl bg-stone-100 dark:bg-stone-800 text-stone-800 dark:text-stone-200 text-xs font-bold uppercase tracking-wider hover:bg-chocoGold hover:text-white transition flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-globe"></i> <span id="mobileRtlText">Switch RTL</span>
+                </button>
+                <button onclick="toggleTheme()" class="flex-1 py-2.5 px-3 rounded-xl bg-stone-100 dark:bg-stone-800 text-stone-800 dark:text-stone-200 text-xs font-bold uppercase tracking-wider hover:bg-chocoGold hover:text-white transition flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-circle-half-stroke"></i> <span>Theme Mode</span>
+                </button>
+            </div>
+
+            <div class="flex flex-col gap-2 font-semibold">
+                <div class="py-2 px-3 bg-stone-50 dark:bg-stone-800/50 rounded-xl text-xs uppercase text-chocoGold font-bold tracking-wider">Home Layouts</div>
+                <a href="index.html" class="px-4 py-2.5 rounded-lg text-stone-900 dark:text-stone-200 hover:bg-chocoGold/10 hover:text-chocoGold text-sm">Home 1 - Specialty Store</a>
+                <a href="home-2.html" class="px-4 py-2.5 rounded-lg text-stone-900 dark:text-stone-200 hover:bg-chocoGold/10 hover:text-chocoGold text-sm">Home 2 - Artisan Vibe</a>
+
+                <hr class="border-stone-200 dark:border-stone-700 my-1">
+
+                <a href="about.html" onclick="toggleMobileMenu()" class="px-4 py-2.5 rounded-lg text-stone-900 dark:text-stone-200 hover:bg-chocoGold/10 hover:text-chocoGold text-sm">About</a>
+                <a href="brands.html" onclick="toggleMobileMenu()" class="px-4 py-2.5 rounded-lg bg-chocoGold/10 text-chocoGold text-sm font-bold">Brands</a>
+                <a href="products.html" onclick="toggleMobileMenu()" class="px-4 py-2.5 rounded-lg text-stone-900 dark:text-stone-200 hover:bg-chocoGold/10 hover:text-chocoGold text-sm">Products</a>
+                <a href="gifting.html" onclick="toggleMobileMenu()" class="px-4 py-2.5 rounded-lg text-stone-900 dark:text-stone-200 hover:bg-chocoGold/10 hover:text-chocoGold text-sm">Gifting</a>
+                <a href="faq.html" onclick="toggleMobileMenu()" class="px-4 py-2.5 rounded-lg text-stone-900 dark:text-stone-200 hover:bg-chocoGold/10 hover:text-chocoGold text-sm">FAQ</a>
+                <a href="contact.html" onclick="toggleMobileMenu()" class="px-4 py-2.5 rounded-lg text-stone-900 dark:text-stone-200 hover:bg-chocoGold/10 hover:text-chocoGold text-sm">Contact</a>
+                
+                <div class="pt-3">
+                    <a href="gifting.html" onclick="toggleMobileMenu()" class="block w-full py-3 text-center rounded-xl bg-gradient-to-r from-chocoGold to-chocoBronze text-white font-bold text-xs uppercase tracking-wider shadow-lg shadow-chocoGold/30">
+                        Explore Gifting
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- ================= FULL-VIEWPORT HERO BACKGROUND IMAGE FOR BRANDS PAGE ================= -->
+    <section class="relative min-h-screen flex items-center justify-center pt-28 pb-20 lg:pt-36 lg:pb-28 overflow-hidden bg-stone-900 text-white">
+        <!-- Cinematic Full-Viewport Background Image -->
+        <div class="absolute inset-0 z-0">
+            <img src="img/d4.webp" alt="Prestigious Global Chocolate Houses" class="w-full h-full object-cover object-center transform scale-105 opacity-60">
+            <div class="absolute inset-0 bg-gradient-to-r from-black/90 via-black/70 to-black/50"></div>
+        </div>
+
+        <div class="max-w-5xl mx-auto px-4 sm:px-8 relative z-10 w-full text-center py-16">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-chocoGold/20 border border-chocoGold/40 text-chocoGold text-xs font-bold uppercase tracking-widest backdrop-blur-md mb-6">
+                <i class="fa-solid fa-crown"></i> AUTHORIZED IMPORT PARTNERS
+            </div>
+            
+            <h1 class="font-serif-luxury text-4xl sm:text-6xl lg:text-7xl font-bold tracking-tight leading-tight text-white mb-6">
+                The World's Most <span class="text-transparent bg-clip-text bg-gradient-to-r from-chocoGold to-amber-200">Iconic Chocolatiers.</span>
+            </h1>
+            
+            <p class="text-stone-200 text-base sm:text-xl max-w-2xl mx-auto leading-relaxed mb-10 font-normal">
+                Explore our exclusive roster of historic European chocolateries and single-estate South American cacao pioneers, imported directly via climate-controlled air freight.
+            </p>
+
+            <div class="flex flex-wrap items-center justify-center gap-4">
+                <a href="#brand-houses" class="px-8 py-4 rounded-xl bg-gradient-to-r from-chocoGold to-chocoBronze text-white font-bold text-sm uppercase tracking-wider shadow-2xl shadow-chocoGold/40 hover:scale-105 transition">
+                    Discover Brand Houses <i class="fa-solid fa-arrow-down ml-2"></i>
+                </a>
+                <a href="products.html" class="px-8 py-4 rounded-xl bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/20 text-white font-bold text-sm uppercase tracking-wider transition">
+                    Browse by Origin
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ================= SECTION 1: FLAGSHIP EUROPEAN & ESTATE BRAND HOUSES ================= -->
+    <section id="brand-houses" class="py-24 bg-white dark:bg-chocoDark transition-colors duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="text-chocoGold text-xs font-bold uppercase tracking-widest block">Prestigious Roster</span>
+                <h2 class="font-serif-luxury text-3xl sm:text-5xl font-bold text-stone-900 dark:text-white leading-tight">
+                    Our Flagship Brand Houses
+                </h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-chocoGold to-chocoBronze mx-auto rounded-full"></div>
+                <p class="text-stone-600 dark:text-stone-400 text-sm sm:text-base">
+                    Each brand in our portfolio represents decades—and often centuries—of uncompromising dedication to the art of fine confectionery.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Brand 1 -->
+                <div class="bg-stone-50 dark:bg-chocoCard border border-stone-200 dark:border-stone-800 rounded-3xl p-8 shadow-xl flex flex-col justify-between hover:border-chocoGold/50 transition group">
+                    <div>
+                        <div class="flex items-center justify-between mb-6">
+                            <div class="w-12 h-12 rounded-2xl bg-chocoGold/10 text-chocoGold flex items-center justify-center text-xl font-bold group-hover:scale-110 transition-transform">
+                                <i class="fa-solid fa-crown"></i>
+                            </div>
+                            <span class="text-xs font-bold text-stone-400 uppercase tracking-wider">Est. 1932 • Switzerland</span>
+                        </div>
+                        <h3 class="font-serif-luxury text-2xl font-bold text-stone-900 dark:text-white mb-3">Teuscher Zürich</h3>
+                        <p class="text-xs sm:text-sm text-stone-600 dark:text-stone-400 leading-relaxed mb-6">
+                            Celebrated globally for their legendary Dom Pérignon champagne truffles, hand-rolled marzipan, and zero-preservative Alpine cream ganaches crafted in small batches in Zurich.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-stone-200 dark:border-stone-800 flex items-center justify-between">
+                        <span class="text-[11px] text-chocoGold font-bold">Flagship: Champagne Truffles</span>
+                        <a href="products.html" class="text-xs font-bold text-stone-900 dark:text-white hover:text-chocoGold uppercase tracking-wider transition">Explore <i class="fa-solid fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+
+                <!-- Brand 2 -->
+                <div class="bg-stone-50 dark:bg-chocoCard border border-stone-200 dark:border-stone-800 rounded-3xl p-8 shadow-xl flex flex-col justify-between hover:border-chocoGold/50 transition group">
+                    <div>
+                        <div class="flex items-center justify-between mb-6">
+                            <div class="w-12 h-12 rounded-2xl bg-amber-500/10 text-amber-500 flex items-center justify-center text-xl font-bold group-hover:scale-110 transition-transform">
+                                <i class="fa-solid fa-gem"></i>
+                            </div>
+                            <span class="text-xs font-bold text-stone-400 uppercase tracking-wider">Est. 1995 • Belgium</span>
+                        </div>
+                        <h3 class="font-serif-luxury text-2xl font-bold text-stone-900 dark:text-white mb-3">Pierre Marcolini</h3>
+                        <p class="text-xs sm:text-sm text-stone-600 dark:text-stone-400 leading-relaxed mb-6">
+                            A pioneer of the modern bean-to-bar movement in Brussels, sourcing rare single-plantation cocoa beans directly from independent growers across four continents.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-stone-200 dark:border-stone-800 flex items-center justify-between">
+                        <span class="text-[11px] text-chocoGold font-bold">Flagship: Grand Cru Ganaches</span>
+                        <a href="products.html" class="text-xs font-bold text-stone-900 dark:text-white hover:text-chocoGold uppercase tracking-wider transition">Explore <i class="fa-solid fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+
+                <!-- Brand 3 -->
+                <div class="bg-stone-50 dark:bg-chocoCard border border-stone-200 dark:border-stone-800 rounded-3xl p-8 shadow-xl flex flex-col justify-between hover:border-chocoGold/50 transition group">
+                    <div>
+                        <div class="flex items-center justify-between mb-6">
+                            <div class="w-12 h-12 rounded-2xl bg-chocoGold/10 text-chocoGold flex items-center justify-center text-xl font-bold group-hover:scale-110 transition-transform">
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <span class="text-xs font-bold text-stone-400 uppercase tracking-wider">Est. 1922 • France</span>
+                        </div>
+                        <h3 class="font-serif-luxury text-2xl font-bold text-stone-900 dark:text-white mb-3">Valrhona Grand Cru</h3>
+                        <p class="text-xs sm:text-sm text-stone-600 dark:text-stone-400 leading-relaxed mb-6">
+                            The gold standard for Michelin-starred pastry chefs worldwide, renowned for vintage terroir-driven couvertures and complex fruity dark chocolate profiles.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-stone-200 dark:border-stone-800 flex items-center justify-between">
+                        <span class="text-[11px] text-chocoGold font-bold">Flagship: Guanaja 70%</span>
+                        <a href="products.html" class="text-xs font-bold text-stone-900 dark:text-white hover:text-chocoGold uppercase tracking-wider transition">Explore <i class="fa-solid fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+
+                <!-- Brand 4 -->
+                <div class="bg-stone-50 dark:bg-chocoCard border border-stone-200 dark:border-stone-800 rounded-3xl p-8 shadow-xl flex flex-col justify-between hover:border-chocoGold/50 transition group">
+                    <div>
+                        <div class="flex items-center justify-between mb-6">
+                            <div class="w-12 h-12 rounded-2xl bg-amber-500/10 text-amber-500 flex items-center justify-center text-xl font-bold group-hover:scale-110 transition-transform">
+                                <i class="fa-solid fa-earth-americas"></i>
+                            </div>
+                            <span class="text-xs font-bold text-stone-400 uppercase tracking-wider">Est. 1990 • Italy</span>
+                        </div>
+                        <h3 class="font-serif-luxury text-2xl font-bold text-stone-900 dark:text-white mb-3">Amedei Toscana</h3>
+                        <p class="text-xs sm:text-sm text-stone-600 dark:text-stone-400 leading-relaxed mb-6">
+                            Multi-award-winning Tuscan chocolate atelier famous for securing exclusive harvests of ultra-rare Venezuelan Porcelana and Chuao cocoa beans.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-stone-200 dark:border-stone-800 flex items-center justify-between">
+                        <span class="text-[11px] text-chocoGold font-bold">Flagship: Porcelana Limited</span>
+                        <a href="products.html" class="text-xs font-bold text-stone-900 dark:text-white hover:text-chocoGold uppercase tracking-wider transition">Explore <i class="fa-solid fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+
+                <!-- Brand 5 -->
+                <div class="bg-stone-50 dark:bg-chocoCard border border-stone-200 dark:border-stone-800 rounded-3xl p-8 shadow-xl flex flex-col justify-between hover:border-chocoGold/50 transition group">
+                    <div>
+                        <div class="flex items-center justify-between mb-6">
+                            <div class="w-12 h-12 rounded-2xl bg-chocoGold/10 text-chocoGold flex items-center justify-center text-xl font-bold group-hover:scale-110 transition-transform">
+                                <i class="fa-solid fa-seedling"></i>
+                            </div>
+                            <span class="text-xs font-bold text-stone-400 uppercase tracking-wider">Est. 2002 • Ecuador</span>
+                        </div>
+                        <h3 class="font-serif-luxury text-2xl font-bold text-stone-900 dark:text-white mb-3">Pacari Organic</h3>
+                        <p class="text-xs sm:text-sm text-stone-600 dark:text-stone-400 leading-relaxed mb-6">
+                            The first single-origin organic tree-to-bar chocolate maker in Ecuador, working directly with biodynamic family farms to preserve Arriba Nacional cacao.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-stone-200 dark:border-stone-800 flex items-center justify-between">
+                        <span class="text-[11px] text-chocoGold font-bold">Flagship: Raw 70% & Lemongrass</span>
+                        <a href="products.html" class="text-xs font-bold text-stone-900 dark:text-white hover:text-chocoGold uppercase tracking-wider transition">Explore <i class="fa-solid fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+
+                <!-- Brand 6 -->
+                <div class="bg-stone-50 dark:bg-chocoCard border border-stone-200 dark:border-stone-800 rounded-3xl p-8 shadow-xl flex flex-col justify-between hover:border-chocoGold/50 transition group">
+                    <div>
+                        <div class="flex items-center justify-between mb-6">
+                            <div class="w-12 h-12 rounded-2xl bg-amber-500/10 text-amber-500 flex items-center justify-center text-xl font-bold group-hover:scale-110 transition-transform">
+                                <i class="fa-solid fa-award"></i>
+                            </div>
+                            <span class="text-xs font-bold text-stone-400 uppercase tracking-wider">Est. 1857 • Belgium</span>
+                        </div>
+                        <h3 class="font-serif-luxury text-2xl font-bold text-stone-900 dark:text-white mb-3">Neuhaus Maître</h3>
+                        <p class="text-xs sm:text-sm text-stone-600 dark:text-stone-400 leading-relaxed mb-6">
+                            Inventors of the original Belgian praline and luxury ballotin gift box in Brussels, upholding royal warrant standards of confectionery craftsmanship.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-stone-200 dark:border-stone-800 flex items-center justify-between">
+                        <span class="text-[11px] text-chocoGold font-bold">Flagship: Irrésistibles Nougatine</span>
+                        <a href="products.html" class="text-xs font-bold text-stone-900 dark:text-white hover:text-chocoGold uppercase tracking-wider transition">Explore <i class="fa-solid fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ================= SECTION 2: BRAND CURATION & SELECTION CRITERIA ================= -->
+    <section class="py-24 bg-stone-100 dark:bg-[#161616] transition-colors duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-6 space-y-6">
+                    <span class="text-chocoGold text-xs font-bold uppercase tracking-widest block">Strict Vetting Standard</span>
+                    <h2 class="font-serif-luxury text-3xl sm:text-4xl lg:text-5xl font-bold text-stone-900 dark:text-white leading-tight">
+                        How We Select Our Partner Chocolatiers
+                    </h2>
+                    <p class="text-stone-600 dark:text-stone-300 text-sm sm:text-base leading-relaxed">
+                        Fewer than 3% of international confectionery houses meet our rigorous importation benchmarks. Our sommelier panel conducts annual on-site audits of partner ateliers and cacao cooperatives.
+                    </p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-4">
+                        <div class="bg-white dark:bg-chocoCard p-6 rounded-2xl border border-stone-200 dark:border-stone-800 shadow-md">
+                            <div class="text-chocoGold font-bold text-lg mb-2"><i class="fa-solid fa-droplet"></i></div>
+                            <h4 class="font-serif-luxury text-lg font-bold text-stone-900 dark:text-white mb-1">100% Pure Cocoa Butter</h4>
+                            <p class="text-xs text-stone-500 dark:text-stone-400">Zero vegetable fat substitutes, palm oil, or synthetic vanillin.</p>
+                        </div>
+                        <div class="bg-white dark:bg-chocoCard p-6 rounded-2xl border border-stone-200 dark:border-stone-800 shadow-md">
+                            <div class="text-amber-500 font-bold text-lg mb-2"><i class="fa-solid fa-scale-balanced"></i></div>
+                            <h4 class="font-serif-luxury text-lg font-bold text-stone-900 dark:text-white mb-1">Direct Trade Ethics</h4>
+                            <p class="text-xs text-stone-500 dark:text-stone-400">Transparent farm-gate pricing that rewards fine-flavor cultivation.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:col-span-6">
+                    <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white dark:border-stone-800 aspect-[16/11]">
+                        <img src="img/d1.webp" alt="Chocolate Tempering Inspection" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent flex items-end p-6">
+                            <span class="text-white text-xs font-bold uppercase tracking-widest">Master Chocolatiers Tempering Single-Origin Couverture</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ================= SECTION 3: SIMPLE GALLERY SECTION (ATELIER & COLLECTIONS) ================= -->
+    <section class="py-24 bg-white dark:bg-chocoDark transition-colors duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+                <span class="text-chocoGold text-xs font-bold uppercase tracking-widest block">Visual Showcase</span>
+                <h2 class="font-serif-luxury text-3xl sm:text-5xl font-bold text-stone-900 dark:text-white">Brand Houses Gallery</h2>
+                <p class="text-stone-600 dark:text-stone-400 text-sm">A curated visual tour of signature ballotins, hand-molded pralines, and single-origin harvests from our global partners.</p>
+            </div>
+
+            <!-- Clean 4-Column Responsive Gallery Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="rounded-3xl overflow-hidden shadow-xl aspect-square border-2 border-stone-200 dark:border-stone-800 group relative">
+                    <img src="img/s1.jpg" alt="Swiss Truffle Assortment" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-5">
+                        <span class="text-white text-xs font-bold uppercase tracking-wider">Swiss Truffles</span>
+                    </div>
+                </div>
+                <div class="rounded-3xl overflow-hidden shadow-xl aspect-square border-2 border-stone-200 dark:border-stone-800 group relative">
+                    <img src="img/s2.webp" alt="Belgian Praline Craft" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-5">
+                        <span class="text-white text-xs font-bold uppercase tracking-wider">Belgian Pralines</span>
+                    </div>
+                </div>
+                <div class="rounded-3xl overflow-hidden shadow-xl aspect-square border-2 border-stone-200 dark:border-stone-800 group relative">
+                    <img src="img/s3.webp" alt="Luxury Gift Ballotins" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-5">
+                        <span class="text-white text-xs font-bold uppercase tracking-wider">Gold Foil Ballotins</span>
+                    </div>
+                </div>
+                <div class="rounded-3xl overflow-hidden shadow-xl aspect-square border-2 border-stone-200 dark:border-stone-800 group relative">
+                    <img src="https://images.unsplash.com/photo-1606312619070-d48b4c652a52?auto=format&fit=crop&w=600&q=80" alt="Single-Origin Dark Bars" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-5">
+                        <span class="text-white text-xs font-bold uppercase tracking-wider">Single-Origin Bars</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ================= SECTION 4: HERITAGE TIMELINE & MILESTONES ================= -->
+    <section class="py-24 bg-stone-100 dark:bg-[#161616] transition-colors duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+                <span class="text-chocoGold text-xs font-bold uppercase tracking-widest block">Centuries of Craft</span>
+                <h2 class="font-serif-luxury text-3xl sm:text-5xl font-bold text-stone-900 dark:text-white">European Confectionery Legacies</h2>
+                <p class="text-stone-600 dark:text-stone-400 text-sm">Key historical innovations pioneered by the partner houses available in our flagship store.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white dark:bg-chocoCard border border-stone-200 dark:border-stone-800 rounded-3xl p-8 shadow-xl space-y-3">
+                    <span class="font-serif-luxury text-3xl font-bold text-chocoGold">1857</span>
+                    <h3 class="font-serif-luxury text-xl font-bold text-stone-900 dark:text-white">The Brussels Praline</h3>
+                    <p class="text-xs sm:text-sm text-stone-600 dark:text-stone-400 leading-relaxed">
+                        Introduction of filled chocolate shells in Belgium, transforming solid cacao into delicate multi-textured confections.
+                    </p>
+                </div>
+
+                <div class="bg-white dark:bg-chocoCard border border-stone-200 dark:border-stone-800 rounded-3xl p-8 shadow-xl space-y-3">
+                    <span class="font-serif-luxury text-3xl font-bold text-chocoGold">1922</span>
+                    <h3 class="font-serif-luxury text-xl font-bold text-stone-900 dark:text-white">French Grand Cru</h3>
+                    <p class="text-xs sm:text-sm text-stone-600 dark:text-stone-400 leading-relaxed">
+                        Application of fine wine terroir classification to single-estate cocoa harvests in the Rhône Valley.
+                    </p>
+                </div>
+
+                <div class="bg-white dark:bg-chocoCard border border-stone-200 dark:border-stone-800 rounded-3xl p-8 shadow-xl space-y-3">
+                    <span class="font-serif-luxury text-3xl font-bold text-chocoGold">1932</span>
+                    <h3 class="font-serif-luxury text-xl font-bold text-stone-900 dark:text-white">Champagne Truffle</h3>
+                    <p class="text-xs sm:text-sm text-stone-600 dark:text-stone-400 leading-relaxed">
+                        First blending of vintage French Champagne with fresh Swiss alpine cream inside a dark chocolate core.
+                    </p>
+                </div>
+
+                <div class="bg-white dark:bg-chocoCard border border-stone-200 dark:border-stone-800 rounded-3xl p-8 shadow-xl space-y-3">
+                    <span class="font-serif-luxury text-3xl font-bold text-chocoGold">2002</span>
+                    <h3 class="font-serif-luxury text-xl font-bold text-stone-900 dark:text-white">Tree-to-Bar Origin</h3>
+                    <p class="text-xs sm:text-sm text-stone-600 dark:text-stone-400 leading-relaxed">
+                        Full fermentation, roasting, and bar molding performed at the country of cacao origin in Ecuador.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ================= SECTION 5: EXCLUSIVE IMPORTED EDITION SHOWCASE ================= -->
+    <section class="py-24 bg-white dark:bg-chocoDark transition-colors duration-300">
+        <div class="max-w-5xl mx-auto px-4 sm:px-8">
+            <div class="bg-gradient-to-r from-chocoDark via-chocoCard to-chocoDark border border-stone-800 rounded-3xl p-8 sm:p-14 text-white shadow-2xl text-center space-y-6">
+                <span class="text-chocoGold text-xs font-bold uppercase tracking-widest block">Limited Allocation</span>
+                <h2 class="font-serif-luxury text-3xl sm:text-4xl font-bold text-white">The Grand Reserve Brand Tasting Chest</h2>
+                <p class="text-stone-300 text-sm sm:text-base max-w-2xl mx-auto leading-relaxed">
+                    Experience all six of our flagship import houses in a single heirloom walnut chest. Includes 36 assorted pralines, truffles, and single-estate bars with a bound sommelier tasting guide.
+                </p>
+                <div class="pt-4 flex flex-wrap justify-center gap-4">
+                    <a href="gifting.html" class="px-8 py-4 rounded-xl bg-gradient-to-r from-chocoGold to-chocoBronze text-white font-bold text-xs uppercase tracking-wider shadow-lg shadow-chocoGold/30 hover:scale-105 transition inline-block">
+                        Explore Reserve Chests <i class="fa-solid fa-arrow-right ml-2"></i>
+                    </a>
+                    <a href="contact.html" class="px-8 py-4 rounded-xl bg-white/10 hover:bg-white/20 border border-white/20 text-white font-bold text-xs uppercase tracking-wider transition inline-block">
+                        Wholesale Enquiries
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ================= SECTION 6: WHOLESALE & BOUTIQUE DISTRIBUTION ================= -->
+    <section class="py-24 bg-stone-100 dark:bg-[#161616] transition-colors duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+                <span class="text-chocoGold text-xs font-bold uppercase tracking-widest block">Trade & Hospitality</span>
+                <h2 class="font-serif-luxury text-3xl sm:text-5xl font-bold text-stone-900 dark:text-white">Authorized Wholesale Distribution</h2>
+                <p class="text-stone-600 dark:text-stone-400 text-sm">We supply five-star hotels, Michelin-starred restaurants, and luxury specialty grocers across North America.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white dark:bg-chocoCard border border-stone-200 dark:border-stone-800 rounded-3xl p-8 shadow-xl space-y-4">
+                    <div class="w-12 h-12 rounded-2xl bg-chocoGold/10 text-chocoGold flex items-center justify-center text-xl font-bold">
+                        <i class="fa-solid fa-hotel"></i>
+                    </div>
+                    <h3 class="font-serif-luxury text-xl font-bold text-stone-900 dark:text-white">Luxury Hospitality</h3>
+                    <p class="text-xs sm:text-sm text-stone-600 dark:text-stone-400 leading-relaxed">
+                        Custom pillow-gift ballotins and VIP suite welcome amenities crafted by Swiss and Belgian master chocolatiers.
+                    </p>
+                </div>
+
+                <div class="bg-white dark:bg-chocoCard border border-stone-200 dark:border-stone-800 rounded-3xl p-8 shadow-xl space-y-4">
+                    <div class="w-12 h-12 rounded-2xl bg-amber-500/10 text-amber-500 flex items-center justify-center text-xl font-bold">
+                        <i class="fa-solid fa-utensils"></i>
+                    </div>
+                    <h3 class="font-serif-luxury text-xl font-bold text-stone-900 dark:text-white">Pastry & Culinary</h3>
+                    <p class="text-xs sm:text-sm text-stone-600 dark:text-stone-400 leading-relaxed">
+                        Bulk single-origin couvertures, cocoa powders, and pure roasted nut pralines for executive pastry kitchens.
+                    </p>
+                </div>
+
+                <div class="bg-white dark:bg-chocoCard border border-stone-200 dark:border-stone-800 rounded-3xl p-8 shadow-xl space-y-4">
+                    <div class="w-12 h-12 rounded-2xl bg-chocoGold/10 text-chocoGold flex items-center justify-center text-xl font-bold">
+                        <i class="fa-solid fa-store"></i>
+                    </div>
+                    <h3 class="font-serif-luxury text-xl font-bold text-stone-900 dark:text-white">Boutique Retailers</h3>
+                    <p class="text-xs sm:text-sm text-stone-600 dark:text-stone-400 leading-relaxed">
+                        Curated retail displays and seasonal collections backed by temperature-controlled air-freight replenishment.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ================= EXACT ADVANCED DARK FOOTER ================= -->
+    <footer class="bg-[#0b0907] text-stone-400 pt-16 pb-12 border-t border-stone-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 pb-16 border-b border-stone-800/60">
+                
+                <!-- Col 1: Brand Info & Social Icons -->
+                <div class="space-y-4">
+                    <div class="flex items-center gap-2.5">
+                        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-chocoGold to-chocoRich flex items-center justify-center text-white font-bold text-lg shadow-lg shadow-chocoGold/30">
+                            <i class="fa-solid fa-cookie-bite"></i>
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="font-serif-luxury text-lg font-bold text-white tracking-tight leading-none">Cacao & Velvet</span>
+                            <span class="text-[10px] uppercase tracking-widest text-chocoGold font-semibold mt-0.5">Imported Confectionery</span>
+                        </div>
+                    </div>
+                    <p class="text-xs sm:text-sm text-stone-400 leading-relaxed max-w-sm">
+                        Specialty chocolate and confectionery import store bringing rare single-origin estates, Swiss truffles, and Belgian pralines directly to connoisseurs.
+                    </p>
+                    <div class="flex items-center gap-3 pt-2">
+                        <a href="#" class="w-9 h-9 rounded-xl bg-stone-900 border border-stone-800 flex items-center justify-center text-stone-400 hover:text-chocoGold hover:border-chocoGold transition"><i class="fa-brands fa-facebook-f text-xs"></i></a>
+                        <a href="#" class="w-9 h-9 rounded-xl bg-stone-900 border border-stone-800 flex items-center justify-center text-stone-400 hover:text-chocoGold hover:border-chocoGold transition"><i class="fa-brands fa-instagram text-xs"></i></a>
+                        <a href="#" class="w-9 h-9 rounded-xl bg-stone-900 border border-stone-800 flex items-center justify-center text-stone-400 hover:text-chocoGold hover:border-chocoGold transition"><i class="fa-brands fa-twitter text-xs"></i></a>
+                    </div>
+                </div>
+
+                <!-- Col 2: Navigation -->
+                <div class="space-y-4">
+                    <h4 class="text-white text-xs font-bold uppercase tracking-widest">Navigation</h4>
+                    <ul class="space-y-3 text-xs font-medium">
+                        <li><a href="index.html" class="hover:text-chocoGold transition">Home 1 (Specialty)</a></li>
+                        <li><a href="home-2.html" class="hover:text-chocoGold transition">Home 2 (Artisan)</a></li>
+                        <li><a href="about.html" class="hover:text-chocoGold transition">About Us</a></li>
+                        <li><a href="brands.html" class="hover:text-chocoGold transition">Imported Brands</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Collections -->
+                <div class="space-y-4">
+                    <h4 class="text-white text-xs font-bold uppercase tracking-widest">Collections</h4>
+                    <ul class="space-y-3 text-xs font-medium">
+                        <li><a href="products.html" class="hover:text-chocoGold transition">Products by Origin</a></li>
+                        <li><a href="gifting.html" class="hover:text-chocoGold transition">Luxury Gifting</a></li>
+                        <li><a href="faq.html" class="hover:text-chocoGold transition">FAQ Assistance</a></li>
+                        <li><a href="contact.html" class="hover:text-chocoGold transition">Enquiry Form</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Get in Touch -->
+                <div class="space-y-4">
+                    <h4 class="text-white text-xs font-bold uppercase tracking-widest">Concierge</h4>
+                    <ul class="space-y-3 text-xs">
+                        <li>
+                            <a href="mailto:concierge@cacaovelvet.com" class="flex items-center gap-2.5 hover:text-chocoGold transition">
+                                <i class="fa-solid fa-envelope text-chocoGold text-sm w-4"></i> concierge@cacaovelvet.com
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tel:18002226838" class="flex items-center gap-2.5 hover:text-chocoGold transition">
+                                <i class="fa-solid fa-phone text-chocoGold text-sm w-4"></i> 1-800-CACAO-VELVET
+                            </a>
+                        </li>
+                        <li>
+                            <div class="flex items-start gap-2.5">
+                                <i class="fa-solid fa-location-dot text-chocoGold text-sm w-4 mt-0.5"></i>
+                                <span class="leading-relaxed">742 Avenue Cacao, Suite 400, New York, NY 10021</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Bottom Copyright & Policies -->
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-stone-500 gap-4">
+                <p>&copy; 2026 Cacao & Velvet Specialty Chocolate Import Store. All rights reserved.</p>
+                <div class="flex gap-6">
+                    <a href="#" class="hover:text-stone-400 transition">Privacy Policy</a>
+                    <a href="#" class="hover:text-stone-400 transition">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script Utilities -->
+    <script>
+        // Toggle Mobile Menu
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            const icon = document.getElementById('menuIcon');
+            menu.classList.toggle('hidden');
+            if(menu.classList.contains('hidden')) {
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            } else {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-xmark');
+            }
+        }
+
+        // Dark/Light Theme Switcher
+        function toggleTheme() {
+            const html = document.documentElement;
+            if (html.classList.contains('dark')) {
+                html.classList.remove('dark');
+                localStorage.theme = 'light';
+            } else {
+                html.classList.add('dark');
+                localStorage.theme = 'dark';
+            }
+        }
+
+        // RTL / LTR Switcher
+        function toggleRTL() {
+            const html = document.documentElement;
+            const btnText = document.getElementById('rtlBtnText');
+            const mobileRtlText = document.getElementById('mobileRtlText');
+            if (html.getAttribute('dir') === 'rtl') {
+                html.setAttribute('dir', 'ltr');
+                if(btnText) btnText.innerText = 'RTL';
+                if(mobileRtlText) mobileRtlText.innerText = 'Switch RTL';
+                localStorage.dir = 'ltr';
+            } else {
+                html.setAttribute('dir', 'rtl');
+                if(btnText) btnText.innerText = 'LTR';
+                if(mobileRtlText) mobileRtlText.innerText = 'Switch LTR';
+                localStorage.dir = 'rtl';
+            }
+        }
+
+        // Check initial theme preference
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+        }
+
+        // Check initial RTL preference
+        if (localStorage.dir === 'rtl') {
+            document.documentElement.setAttribute('dir', 'rtl');
+            if(document.getElementById('rtlBtnText')) document.getElementById('rtlBtnText').innerText = 'LTR';
+            if(document.getElementById('mobileRtlText')) document.getElementById('mobileRtlText').innerText = 'Switch LTR';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Cacao & Velvet | Specialty Chocolate & Confectionery Import Store</title>
+    <!-- Exact Title Icon Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><rect width='512' height='512' rx='120' fill='url(%23grad)'/><defs><linearGradient id='grad' x1='0%' y1='0%' x2='100%' y2='100%'><stop offset='0%' stop-color='%23D4AF37'/><stop offset='100%' stop-color='%233D2314'/></linearGradient></defs><path fill='%23ffffff' d='M256 112c-35 55-64 88-64 136 0 35.3 28.7 64 64 64s64-28.7 64-64c0-48-29-81-64-136z'/></svg>">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        chocoGold: '#D4AF37',
+                        chocoBronze: '#A67B5B',
+                        chocoDark: '#120E0B',
+                        chocoCard: '#1C1612',
+                        chocoRich: '#2C1E14',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-weight: 500;
+        }
+        .font-serif-luxury {
+            font-family: 'Playfair Display', serif;
+        }
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #1c1612;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #D4AF37;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body class="bg-stone-50 text-stone-800 dark:bg-chocoDark dark:text-stone-100 transition-colors duration-300">
+
+   <!-- ================= ADVANCED FLOATING NAVBAR (FAQ ACTIVE) ================= -->
+<header class="fixed top-4 left-0 right-0 z-50 px-4 sm:px-8">
+    <nav class="max-w-7xl mx-auto bg-white/90 dark:bg-chocoDark/90 backdrop-blur-md border border-stone-200 dark:border-stone-800 rounded-2xl shadow-xl px-5 py-3.5 flex items-center justify-between transition-all">
+        
+        <!-- Brand Logo -->
+        <a href="index.html" class="flex items-center gap-2.5 group">
+            <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-chocoGold to-chocoRich flex items-center justify-center text-white font-bold text-lg shadow-lg shadow-chocoGold/30 group-hover:scale-105 transition-transform">
+                <i class="fa-solid fa-cookie-bite"></i>
+            </div>
+            <div class="flex flex-col">
+                <span class="font-serif-luxury text-lg font-bold tracking-tight text-stone-900 dark:text-white leading-none">Cacao & Velvet</span>
+                <span class="text-[10px] uppercase tracking-widest text-chocoGold font-semibold mt-0.5">Imported Confectionery</span>
+            </div>
+        </a>
+
+        <!-- Desktop Nav Links (Single-word Names + Home Dropdown with Scrollbar) -->
+        <div class="hidden lg:flex items-center gap-1 font-semibold text-sm">
+            
+            <!-- Home Dropdown with Scrollbar -->
+            <div class="relative group">
+                <button class="px-4 py-2 rounded-xl text-stone-700 dark:text-stone-200 hover:text-chocoGold dark:hover:text-chocoGold hover:bg-stone-100 dark:hover:bg-stone-800/60 transition flex items-center gap-1.5">
+                    Home <i class="fa-solid fa-chevron-down text-xs transition-transform group-hover:rotate-180"></i>
+                </button>
+                <!-- Dropdown Menu with Scrollbar -->
+                <div class="absolute top-full left-0 mt-2 w-52 bg-white dark:bg-chocoCard border border-stone-200 dark:border-stone-700 rounded-xl shadow-2xl py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-2 group-hover:translate-y-0 z-50 max-h-60 overflow-y-auto">
+                    <a href="index.html" class="block px-4 py-2.5 text-stone-700 dark:text-stone-200 hover:bg-chocoGold/10 hover:text-chocoGold text-xs font-semibold transition">Home 1 - Specialty Store</a>
+                    <a href="home-2.html" class="block px-4 py-2.5 text-stone-700 dark:text-stone-200 hover:bg-chocoGold/10 hover:text-chocoGold text-xs font-semibold transition">Home 2 - Artisan Vibe</a>
+                </div>
+            </div>
+
+            <a href="about.html" class="px-4 py-2 rounded-xl text-stone-700 dark:text-stone-200 hover:text-chocoGold dark:hover:text-chocoGold hover:bg-stone-100 dark:hover:bg-stone-800/60 transition">About</a>
+            <a href="brands.html" class="px-4 py-2 rounded-xl text-stone-700 dark:text-stone-200 hover:text-chocoGold dark:hover:text-chocoGold hover:bg-stone-100 dark:hover:bg-stone-800/60 transition">Brands</a>
+            <a href="products.html" class="px-4 py-2 rounded-xl text-stone-700 dark:text-stone-200 hover:text-chocoGold dark:hover:text-chocoGold hover:bg-stone-100 dark:hover:bg-stone-800/60 transition">Products</a>
+            <a href="gifting.html" class="px-4 py-2 rounded-xl text-stone-700 dark:text-stone-200 hover:text-chocoGold dark:hover:text-chocoGold hover:bg-stone-100 dark:hover:bg-stone-800/60 transition">Gifting</a>
+            <a href="faq.html" class="px-4 py-2 rounded-xl text-chocoGold dark:text-chocoGold font-bold bg-chocoGold/10 hover:bg-chocoGold/20 transition">FAQ</a>
+            <a href="contact.html" class="px-4 py-2 rounded-xl text-stone-700 dark:text-stone-200 hover:text-chocoGold dark:hover:text-chocoGold hover:bg-stone-100 dark:hover:bg-stone-800/60 transition">Contact</a>
+        </div>
+
+        <!-- Right Utilities & Action Button (Desktop) -->
+        <div class="hidden lg:flex items-center gap-3">
+            <!-- RTL Toggle Button -->
+            <button onclick="toggleRTL()" class="px-3 py-2 rounded-xl bg-stone-100 dark:bg-stone-800 text-stone-700 dark:text-stone-300 text-xs font-bold uppercase hover:bg-chocoGold hover:text-white transition shadow-sm" title="Toggle RTL/LTR">
+                <span id="rtlBtnText">RTL</span>
+            </button>
+            <!-- Theme Toggle Button -->
+            <button onclick="toggleTheme()" class="w-10 h-10 rounded-xl bg-stone-100 dark:bg-stone-800 text-stone-700 dark:text-stone-300 flex items-center justify-center hover:bg-chocoGold hover:text-white transition shadow-sm" title="Toggle Dark/Light Mode">
+                <i class="fa-solid fa-moon dark:hidden"></i>
+                <i class="fa-solid fa-sun hidden dark:block"></i>
+            </button>
+            <!-- CTA Button -->
+            <a href="gifting.html" class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-chocoGold to-chocoBronze text-white font-bold text-xs uppercase tracking-wider shadow-lg shadow-chocoGold/30 hover:shadow-chocoGold/50 hover:scale-[1.02] active:scale-[0.98] transition">
+                Gifting
+            </a>
+        </div>
+
+        <!-- Mobile Hamburger Button -->
+        <div class="flex items-center gap-2 lg:hidden">
+            <button id="mobileMenuBtn" onclick="toggleMobileMenu()" class="w-10 h-10 rounded-xl bg-stone-100 dark:bg-stone-800 text-stone-800 dark:text-white flex items-center justify-center text-lg focus:outline-none">
+                <i class="fa-solid fa-bars" id="menuIcon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Drawer Navigation -->
+    <div id="mobileMenu" class="hidden lg:hidden mt-2 bg-white dark:bg-chocoCard border border-stone-200 dark:border-stone-800 rounded-2xl shadow-2xl p-5 max-h-[85vh] overflow-y-auto transition-all">
+        <div class="flex items-center justify-between gap-2 pb-4 mb-3 border-b border-stone-200 dark:border-stone-700">
+            <button onclick="toggleRTL()" class="flex-1 py-2.5 px-3 rounded-xl bg-stone-100 dark:bg-stone-800 text-stone-800 dark:text-stone-200 text-xs font-bold uppercase tracking-wider hover:bg-chocoGold hover:text-white transition flex items-center justify-center gap-2">
+                <i class="fa-solid fa-globe"></i> <span id="mobileRtlText">Switch RTL</span>
+            </button>
+            <button onclick="toggleTheme()" class="flex-1 py-2.5 px-3 rounded-xl bg-stone-100 dark:bg-stone-800 text-stone-800 dark:text-stone-200 text-xs font-bold uppercase tracking-wider hover:bg-chocoGold hover:text-white transition flex items-center justify-center gap-2">
+                <i class="fa-solid fa-circle-half-stroke"></i> <span>Theme Mode</span>
+            </button>
+        </div>
+
+        <div class="flex flex-col gap-2 font-semibold">
+            <div class="py-2 px-3 bg-stone-50 dark:bg-stone-800/50 rounded-xl text-xs uppercase text-chocoGold font-bold tracking-wider">Home Layouts</div>
+            <a href="index.html" class="px-4 py-2.5 rounded-lg text-stone-900 dark:text-stone-200 hover:bg-chocoGold/10 hover:text-chocoGold text-sm">Home 1 - Specialty Store</a>
+            <a href="home-2.html" class="px-4 py-2.5 rounded-lg text-stone-900 dark:text-stone-200 hover:bg-chocoGold/10 hover:text-chocoGold text-sm">Home 2 - Artisan Vibe</a>
+
+            <hr class="border-stone-200 dark:border-stone-700 my-1">
+
+            <a href="about.html" onclick="toggleMobileMenu()" class="px-4 py-2.5 rounded-lg text-stone-900 dark:text-stone-200 hover:bg-chocoGold/10 hover:text-chocoGold text-sm">About</a>
+            <a href="brands.html" onclick="toggleMobileMenu()" class="px-4 py-2.5 rounded-lg text-stone-900 dark:text-stone-200 hover:bg-chocoGold/10 hover:text-chocoGold text-sm">Brands</a>
+            <a href="products.html" onclick="toggleMobileMenu()" class="px-4 py-2.5 rounded-lg text-stone-900 dark:text-stone-200 hover:bg-chocoGold/10 hover:text-chocoGold text-sm">Products</a>
+            <a href="gifting.html" onclick="toggleMobileMenu()" class="px-4 py-2.5 rounded-lg text-stone-900 dark:text-stone-200 hover:bg-chocoGold/10 hover:text-chocoGold text-sm">Gifting</a>
+            <a href="faq.html" onclick="toggleMobileMenu()" class="px-4 py-2.5 rounded-lg bg-chocoGold/10 text-chocoGold text-sm font-bold">FAQ</a>
+            <a href="contact.html" onclick="toggleMobileMenu()" class="px-4 py-2.5 rounded-lg text-stone-900 dark:text-stone-200 hover:bg-chocoGold/10 hover:text-chocoGold text-sm">Contact</a>
+            
+            <div class="pt-3">
+                <a href="gifting.html" onclick="toggleMobileMenu()" class="block w-full py-3 text-center rounded-xl bg-gradient-to-r from-chocoGold to-chocoBronze text-white font-bold text-xs uppercase tracking-wider shadow-lg shadow-chocoGold/30">
+                    Explore Gifting
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+
+   <!-- ================= FULL VIEWPORT HERO (DECREASED OVERLAY) ================= -->
+<section class="relative min-h-screen flex items-center overflow-hidden bg-stone-900 text-white">
+    <!-- Background Image + Lighter Cinematic Overlay -->
+    <div class="absolute inset-0 z-0">
+        <img src="https://images.unsplash.com/photo-1549007994-cb92caebd54b?auto=format&fit=crop&w=1920&q=80" alt="Luxury Chocolate Background" class="w-full h-full object-cover object-center">
+        <div class="absolute inset-0 bg-gradient-to-b from-black/80 via-black/50 to-black/80"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-black/40 via-transparent to-black/40"></div>
+    </div>
+
+    <div class="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-8 pt-32 pb-24 lg:pt-36 lg:pb-28">
+        <div class="max-w-3xl mx-auto text-center flex flex-col items-center space-y-7">
+
+            <!-- Breadcrumb -->
+            <nav class="flex items-center gap-2 text-[11px] uppercase tracking-widest font-bold text-stone-400">
+                <a href="index.html" class="hover:text-chocoGold transition">Home</a>
+                <i class="fa-solid fa-angle-right text-[9px] text-stone-600"></i>
+                <span class="text-chocoGold">FAQ</span>
+            </nav>
+
+            <!-- Badge -->
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-chocoGold/20 border border-chocoGold/40 text-chocoGold text-xs font-bold uppercase tracking-widest backdrop-blur-md">
+                <i class="fa-solid fa-circle-question"></i> CLIENT ASSISTANCE CENTRE
+            </div>
+
+            <!-- Headline -->
+            <h1 class="font-serif-luxury text-4xl sm:text-6xl lg:text-7xl font-bold tracking-tight leading-tight text-white">
+                Frequently Asked <span class="text-transparent bg-clip-text bg-gradient-to-r from-chocoGold to-amber-200">Questions</span>
+            </h1>
+
+            <p class="text-stone-300 text-base sm:text-lg max-w-2xl leading-relaxed">
+                Everything you need to know about our international import standards, temperature-controlled shipping, origin sourcing, and bespoke gifting collections.
+            </p>
+
+            <!-- Decorative Search Field -->
+            <div class="w-full max-w-xl pt-2">
+                <div class="relative">
+                    <i class="fa-solid fa-magnifying-glass absolute left-5 top-1/2 -translate-y-1/2 text-chocoGold text-sm"></i>
+                    <input type="text" id="faqSearch" placeholder="Search a question, e.g. shipping, storage, gifting..." class="w-full pl-12 pr-5 py-4 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 text-white placeholder-stone-400 text-sm focus:outline-none focus:border-chocoGold focus:bg-white/15 transition">
+                </div>
+            </div>
+
+            <!-- Stat Chips -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 w-full max-w-2xl pt-4">
+                <div class="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl px-4 py-4">
+                    <div class="font-serif-luxury text-2xl font-bold text-chocoGold">04</div>
+                    <div class="text-[10px] uppercase tracking-widest text-stone-400 font-bold mt-1">Core Topics</div>
+                </div>
+                <div class="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl px-4 py-4">
+                    <div class="font-serif-luxury text-2xl font-bold text-amber-300">18</div>
+                    <div class="text-[10px] uppercase tracking-widest text-stone-400 font-bold mt-1">Detailed Answers</div>
+                </div>
+                <div class="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl px-4 py-4">
+                    <div class="font-serif-luxury text-2xl font-bold text-chocoGold">24h</div>
+                    <div class="text-[10px] uppercase tracking-widest text-stone-400 font-bold mt-1">Concierge Reply</div>
+                </div>
+            </div>
+
+            <!-- Scroll Indicator -->
+            <a href="#topics" class="pt-6 inline-flex flex-col items-center gap-2 text-stone-400 hover:text-chocoGold transition group">
+                <span class="text-[10px] uppercase tracking-widest font-bold">Scroll to explore</span>
+                <i class="fa-solid fa-chevron-down text-sm group-hover:translate-y-1 transition-transform"></i>
+            </a>
+
+        </div>
+    </div>
+</section>
+
+
+    <!-- ================= SECTION 1: QUICK HELP TOPICS ================= -->
+    <section id="topics" class="py-24 bg-white dark:bg-chocoDark transition-colors duration-300 scroll-mt-28">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+                <span class="text-chocoGold text-xs font-bold uppercase tracking-widest block">Browse by Topic</span>
+                <h2 class="font-serif-luxury text-3xl sm:text-5xl font-bold text-stone-900 dark:text-white">Quick Help Categories</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-chocoGold to-chocoBronze mx-auto rounded-full"></div>
+                <p class="text-stone-600 dark:text-stone-400 text-sm pt-2">Select a category below to jump straight to the answers our clients ask about most.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                <!-- Topic 1 -->
+                <a href="#shipping" class="bg-stone-50 dark:bg-chocoCard border border-stone-200 dark:border-stone-800 rounded-3xl p-8 shadow-xl hover:border-chocoGold/50 hover:-translate-y-1 transition-all group flex flex-col">
+                    <div class="w-12 h-12 rounded-2xl bg-chocoGold/10 text-chocoGold flex items-center justify-center text-xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-truck-fast"></i>
+                    </div>
+                    <h3 class="font-serif-luxury text-xl font-bold text-stone-900 dark:text-white mb-2">Shipping & Freshness</h3>
+                    <p class="text-xs sm:text-sm text-stone-600 dark:text-stone-400 leading-relaxed mb-6 flex-1">Cold-chain delivery, air-freight timelines, and melt-free packaging standards.</p>
+                    <span class="text-[11px] font-bold text-chocoGold uppercase tracking-wider flex items-center gap-2">5 Answers <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i></span>
+                </a>
+
+                <!-- Topic 2 -->
+                <a href="#sourcing" class="bg-stone-50 dark:bg-chocoCard border border-stone-200 dark:border-stone-800 rounded-3xl p-8 shadow-xl hover:border-chocoGold/50 hover:-translate-y-1 transition-all group flex flex-col">
+                    <div class="w-12 h-12 rounded-2xl bg-amber-500/10 text-amber-500 flex items-center justify-center text-xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-seedling"></i>
+                    </div>
+                    <h3 class="font-serif-luxury text-xl font-bold text-stone-900 dark:text-white mb-2">Products & Origins</h3>
+                    <p class="text-xs sm:text-sm text-stone-600 dark:text-stone-400 leading-relaxed mb-6 flex-1">Single-origin sourcing, organic certification, and estate traceability.</p>
+                    <span class="text-[11px] font-bold text-chocoGold uppercase tracking-wider flex items-center gap-2">4 Answers <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i></span>
+                </a>
+
+                <!-- Topic 3 -->
+                <a href="#gifting" class="bg-stone-50 dark:bg-chocoCard border border-stone-200 dark:border-stone-800 rounded-3xl p-8 shadow-xl hover:border-chocoGold/50 hover:-translate-y-1 transition-all group flex flex-col">
+                    <div class="w-12 h-12 rounded-2xl bg-chocoGold/10 text-chocoGold flex items-center justify-center text-xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-gift"></i>
+                    </div>
+                    <h3 class="font-serif-luxury text-xl font-bold text-stone-900 dark:text-white mb-2">Gifting & Corporate</h3>
+                    <p class="text-xs sm:text-sm text-stone-600 dark:text-stone-400 leading-relaxed mb-6 flex-1">Custom branding, bulk hampers, and lead times for executive orders.</p>
+                    <span class="text-[11px] font-bold text-chocoGold uppercase tracking-wider flex items-center gap-2">4 Answers <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i></span>
+                </a>
+
+                <!-- Topic 4 -->
+                <a href="#care" class="bg-stone-50 dark:bg-chocoCard border border-stone-200 dark:border-stone-800 rounded-3xl p-8 shadow-xl hover:border-chocoGold/50 hover:-translate-y-1 transition-all group flex flex-col">
+                    <div class="w-12 h-12 rounded-2xl bg-amber-500/10 text-amber-500 flex items-center justify-center text-xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-temperature-half"></i>
+                    </div>
+                    <h3 class="font-serif-luxury text-xl font-bold text-stone-900 dark:text-white mb-2">Storage & Care</h3>
+                    <p class="text-xs sm:text-sm text-stone-600 dark:text-stone-400 leading-relaxed mb-6 flex-1">Ideal temperatures, shelf life, and serving advice for fine chocolate.</p>
+                    <span class="text-[11px] font-bold text-chocoGold uppercase tracking-wider flex items-center gap-2">5 Answers <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i></span>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ================= SECTION 2: SHIPPING & FRESHNESS ================= -->
+    <section id="shipping" class="py-24 bg-stone-100 dark:bg-[#161616] transition-colors duration-300 scroll-mt-28">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8">
+
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+                <span class="text-chocoGold text-xs font-bold uppercase tracking-widest block">Delivery Standards</span>
+                <h2 class="font-serif-luxury text-3xl sm:text-5xl font-bold text-stone-900 dark:text-white">Shipping & Freshness</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-chocoGold to-chocoBronze mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+
+                <!-- Info Card -->
+                <div class="lg:col-span-4 bg-gradient-to-br from-chocoRich to-chocoDark border border-stone-800 rounded-3xl p-8 shadow-2xl lg:sticky lg:top-28">
+                    <div class="w-14 h-14 rounded-2xl bg-chocoGold/15 text-chocoGold flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-snowflake"></i>
+                    </div>
+                    <span class="text-[10px] uppercase font-extrabold text-chocoGold tracking-widest">Cold-Chain Promise</span>
+                    <h3 class="font-serif-luxury text-2xl font-bold text-white mt-2 mb-4">Pristine on Arrival, Every Time</h3>
+                    <p class="text-xs sm:text-sm text-stone-300 leading-relaxed mb-6">
+                        Every order travels in insulated packaging with food-grade gel packs, monitored from our estate partners' kitchens to your door.
+                    </p>
+                    <ul class="space-y-3 text-xs text-stone-300">
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-chocoGold mt-0.5"></i>
+                            <span>Air-freighted directly from origin estates</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-chocoGold mt-0.5"></i>
+                            <span>Insulated liners & ice gel packs in summer</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-chocoGold mt-0.5"></i>
+                            <span>Melt-free guarantee or full replacement</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Accordion -->
+                <div class="lg:col-span-8 faq-group space-y-4">
+
+                    <div class="faq-item bg-white dark:bg-chocoCard border border-stone-200 dark:border-stone-800 rounded-2xl shadow-md overflow-hidden transition-colors">
+                        <button class="faq-toggle w-full flex items-start gap-4 text-start px-5 sm:px-6 py-5">
+                            <span class="w-9 h-9 shrink-0 rounded-xl bg-chocoGold/10 text-chocoGold flex items-center justify-center text-xs font-bold">01</span>
+                            <span class="flex-1 font-serif-luxury text-base sm:text-lg font-bold text-stone-900 dark:text-white leading-snug">How are imported chocolates shipped to ensure freshness?</span>
+                            <i class="faq-icon fa-solid fa-chevron-down text-chocoGold text-xs mt-1.5 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-panel hidden px-5 sm:px-6 pb-6">
+                            <p class="text-xs sm:text-sm text-stone-600 dark:text-stone-300 leading-relaxed">
+                                All our chocolates are air-freighted directly from estate kitchens in Europe and South America. During transit and local delivery, we use specialized temperature-controlled packaging and ice gel packs to guarantee pristine melt-free arrival.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item bg-white dark:bg-chocoCard border border-stone-200 dark:border-stone-800 rounded-2xl shadow-md overflow-hidden transition-colors">
+                        <button class="faq-toggle w-full flex items-start gap-4 text-start px-5 sm:px-6 py-5">
+                            <span class="w-9 h-9 shrink-0 rounded-xl bg-chocoGold/10 text-chocoGold flex items-center justify-center text-xs font-bold">02</span>
+                            <span class="flex-1 font-serif-luxury text-base sm:text-lg font-bold text-stone-900 dark:text-white leading-snug">How long does international delivery take?</span>
+                            <i class="faq-icon fa-solid fa-chevron-down text-chocoGold text-xs mt-1.5 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-panel hidden px-5 sm:px-6 pb-6">
+                            <p class="text-xs sm:text-sm text-stone-600 dark:text-stone-300 leading-relaxed">
+                                Express air-freight orders typically arrive within 3–5 business days, while bespoke hamper and corporate crate orders require 7–10 business days for assembly, engraving, and quality inspection before dispatch.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item bg-white dark:bg-chocoCard border border-stone-200 dark:border-stone-800 rounded-2xl shadow-md overflow-hidden transition-colors">
+                        <button class="faq-toggle w-full flex items-start gap-4 text-start px-5 sm:px-6 py-5">
+                            <span class="w-9 h-9 shrink-0 rounded-xl bg-chocoGold/10 text-chocoGold flex items-center justify-center text-xs font-bold">03</span>
+                            <span class="flex-1 font-serif-luxury text-base sm:text-lg font-bold text-stone-900 dark:text-white leading-snug">Do you deliver to warm climates and remote regions?</span>
+                            <i class="faq-icon fa-solid fa-chevron-down text-chocoGold text-xs mt-1.5 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-panel hidden px-5 sm:px-6 pb-6">
+                            <p class="text-xs sm:text-sm text-stone-600 dark:text-stone-300 leading-relaxed">
+                                Yes. Warmer destinations receive upgraded thermal liners and additional coolant packs at no extra cost. Remote regions are served via our premium courier partners with full end-to-end tracking.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item bg-white dark:bg-chocoCard border border-stone-200 dark:border-stone-800 rounded-2xl shadow-md overflow-hidden transition-colors">
+                        <button class="faq-toggle w-full flex items-start gap-4 text-start px-5 sm:px-6 py-5">
+                            <span class="w-9 h-9 shrink-0 rounded-xl bg-chocoGold/10 text-chocoGold flex items-center justify-center text-xs font-bold">04</span>
+                            <span class="flex-1 font-serif-luxury text-base sm:text-lg font-bold text-stone-900 dark:text-white leading-snug">Can I track my shipment in real time?</span>
+                            <i class="faq-icon fa-solid fa-chevron-down text-chocoGold text-xs mt-1.5 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-panel hidden px-5 sm:px-6 pb-6">
+                            <p class="text-xs sm:text-sm text-stone-600 dark:text-stone-300 leading-relaxed">
+                                Absolutely. Once your parcel leaves our climate-controlled facility, you receive a tracking link by email and SMS, including temperature-log updates for cold-chain shipments.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item bg-white dark:bg-chocoCard border border-stone-200 dark:border-stone-800 rounded-2xl shadow-md overflow-hidden transition-colors">
+                        <button class="faq-toggle w-full flex items-start gap-4 text-start px-5 sm:px-6 py-5">
+                            <span class="w-9 h-9 shrink-0 rounded-xl bg-chocoGold/10 text-chocoGold flex items-center justify-center text-xs font-bold">05</span>
+                            <span class="flex-1 font-serif-luxury text-base sm:text-lg font-bold text-stone-900 dark:text-white leading-snug">What happens if my chocolate arrives damaged?</span>
+                            <i class="faq-icon fa-solid fa-chevron-down text-chocoGold text-xs mt-1.5 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-panel hidden px-5 sm:px-6 pb-6">
+                            <p class="text-xs sm:text-sm text-stone-600 dark:text-stone-300 leading-relaxed">
+                                Contact our concierge within 48 hours with photographs of the packaging. Under our melt-free guarantee, we arrange an immediate replacement or a full refund—no lengthy claims process required.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ================= SECTION 3: PRODUCTS, ORIGINS & SOURCING ================= -->
+    <section id="sourcing" class="py-24 bg-white dark:bg-chocoDark transition-colors duration-300 scroll-mt-28">
+        <div class="max-w-5xl mx-auto px-4 sm:px-8">
+
+            <div class="text-center max-w-2xl mx-auto mb-12 space-y-3">
+                <span class="text-chocoGold text-xs font-bold uppercase tracking-widest block">Traceable Sourcing</span>
+                <h2 class="font-serif-luxury text-3xl sm:text-5xl font-bold text-stone-900 dark:text-white">Products, Origins & Sourcing</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-chocoGold to-chocoBronze mx-auto rounded-full"></div>
+                <p class="text-stone-600 dark:text-stone-400 text-sm pt-2">From Arriba Nacional in Ecuador to Criollo in Venezuela — how we select what reaches your table.</p>
+            </div>
+
+            <!-- Origin Badges Row -->
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 mb-12">
+                <div class="bg-stone-50 dark:bg-chocoCard border border-stone-200 dark:border-stone-800 rounded-2xl py-4 text-center">
+                    <div class="text-chocoGold text-lg mb-1"><i class="fa-solid fa-mountain-sun"></i></div>
+                    <div class="text-[10px] font-bold uppercase tracking-widest text-stone-700 dark:text-stone-300">Switzerland</div>
+                </div>
+                <div class="bg-stone-50 dark:bg-chocoCard border border-stone-200 dark:border-stone-800 rounded-2xl py-4 text-center">
+                    <div class="text-chocoGold text-lg mb-1"><i class="fa-solid fa-city"></i></div>
+                    <div class="text-[10px] font-bold uppercase tracking-widest text-stone-700 dark:text-stone-300">Belgium</div>
+                </div>
+                <div class="bg-stone-50 dark:bg-chocoCard border border-stone-200 dark:border-stone-800 rounded-2xl py-4 text-center">
+                    <div class="text-chocoGold text-lg mb-1"><i class="fa-solid fa-wine-glass"></i></div>
+                    <div class="text-[10px] font-bold uppercase tracking-widest text-stone-700 dark:text-stone-300">France</div>
+                </div>
+                <div class="bg-stone-50 dark:bg-chocoCard border border-stone-200 dark:border-stone-800 rounded-2xl py-4 text-center">
+                    <div class="text-chocoGold text-lg mb-1"><i class="fa-solid fa-seedling"></i></div>
+                    <div class="text-[10px] font-bold uppercase tracking-widest text-stone-700 dark:text-stone-300">Ecuador</div>
+                </div>
+                <div class="bg-stone-50 dark:bg-chocoCard border border-stone-200 dark:border-stone-800 rounded-2xl py-4 text-center">
+                    <div class="text-chocoGold text-lg mb-1"><i class="fa-solid fa-tree"></i></div>
+                    <div class="text-[10px] font-bold uppercase tracking-widest text-stone-700 dark:text-stone-300">Venezuela</div>
+                </div>
+                <div class="bg-stone-50 dark:bg-chocoCard border border-stone-200 dark:border-stone-800 rounded-2xl py-4 text-center">
+                    <div class="text-chocoGold text-lg mb-1"><i class="fa-solid fa-utensils"></i></div>
+                    <div class="text-[10px] font-bold uppercase tracking-widest text-stone-700 dark:text-stone-300">Italy</div>
+                </div>
+            </div>
+
+            <!-- Accordion -->
+            <div class="faq-group space-y-4">
+
+                <div class="faq-item bg-stone-50 dark:bg-chocoCard border border-stone-200 dark:border-stone-800 rounded-2xl shadow-md overflow-hidden transition-colors">
+                    <button class="faq-toggle w-full flex items-start gap-4 text-start px-5 sm:px-6 py-5">
+                        <span class="w-9 h-9 shrink-0 rounded-xl bg-chocoGold/10 text-chocoGold flex items-center justify-center text-xs font-bold">01</span>
+                        <span class="flex-1 font-serif-luxury text-base sm:text-lg font-bold text-stone-900 dark:text-white leading-snug">Are your chocolates certified organic and single-origin?</span>
+                        <i class="faq-icon fa-solid fa-chevron-down text-chocoGold text-xs mt-1.5 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-panel hidden px-5 sm:px-6 pb-6">
+                        <p class="text-xs sm:text-sm text-stone-600 dark:text-stone-300 leading-relaxed">
+                            We partner exclusively with certified estates that practice ethical, sustainable harvesting. Many of our bars and truffles feature single-origin Arriba Nacional and Criollo cacao beans with verified traceability.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item bg-stone-50 dark:bg-chocoCard border border-stone-200 dark:border-stone-800 rounded-2xl shadow-md overflow-hidden transition-colors">
+                    <button class="faq-toggle w-full flex items-start gap-4 text-start px-5 sm:px-6 py-5">
+                        <span class="w-9 h-9 shrink-0 rounded-xl bg-chocoGold/10 text-chocoGold flex items-center justify-center text-xs font-bold">02</span>
+                        <span class="flex-1 font-serif-luxury text-base sm:text-lg font-bold text-stone-900 dark:text-white leading-snug">Which imported brand houses do you stock?</span>
+                        <i class="faq-icon fa-solid fa-chevron-down text-chocoGold text-xs mt-1.5 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-panel hidden px-5 sm:px-6 pb-6">
+                        <p class="text-xs sm:text-sm text-stone-600 dark:text-stone-300 leading-relaxed">
+                            Our featured houses include Teuscher Zürich (Switzerland), Pierre Marcolini (Belgium), Valrhona Grand Cru (France), and Amedei Toscana (Italy), alongside seasonal estate releases from Ecuador and Venezuela.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item bg-stone-50 dark:bg-chocoCard border border-stone-200 dark:border-stone-800 rounded-2xl shadow-md overflow-hidden transition-colors">
+                    <button class="faq-toggle w-full flex items-start gap-4 text-start px-5 sm:px-6 py-5">
+                        <span class="w-9 h-9 shrink-0 rounded-xl bg-chocoGold/10 text-chocoGold flex items-center justify-center text-xs font-bold">03</span>
+                        <span class="flex-1 font-serif-luxury text-base sm:text-lg font-bold text-stone-900 dark:text-white leading-snug">Do you offer allergen and dietary information?</span>
+                        <i class="faq-icon fa-solid fa-chevron-down text-chocoGold text-xs mt-1.5 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-panel hidden px-5 sm:px-6 pb-6">
+                        <p class="text-xs sm:text-sm text-stone-600 dark:text-stone-300 leading-relaxed">
+                            Yes. Every product page lists full ingredient declarations including milk, nuts, soy, and gluten. Our concierge can also curate dairy-free, vegan, and nut-free selections on request.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item bg-stone-50 dark:bg-chocoCard border border-stone-200 dark:border-stone-800 rounded-2xl shadow-md overflow-hidden transition-colors">
+                    <button class="faq-toggle w-full flex items-start gap-4 text-start px-5 sm:px-6 py-5">
+                        <span class="w-9 h-9 shrink-0 rounded-xl bg-chocoGold/10 text-chocoGold flex items-center justify-center text-xs font-bold">04</span>
+                        <span class="flex-1 font-serif-luxury text-base sm:text-lg font-bold text-stone-900 dark:text-white leading-snug">Can I request a specific origin box or tasting flight?</span>
+                        <i class="faq-icon fa-solid fa-chevron-down text-chocoGold text-xs mt-1.5 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-panel hidden px-5 sm:px-6 pb-6">
+                        <p class="text-xs sm:text-sm text-stone-600 dark:text-stone-300 leading-relaxed">
+                            Certainly. Our chocolate sommeliers assemble custom origin boxes and guided tasting flights—simply specify your preferred terroirs, cocoa percentages, and any flavour preferences through the enquiry form.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ================= SECTION 4: GIFTING & CORPORATE ORDERS ================= -->
+    <section id="gifting" class="py-24 bg-stone-100 dark:bg-[#161616] transition-colors duration-300 scroll-mt-28">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8">
+
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+                <span class="text-chocoGold text-xs font-bold uppercase tracking-widest block">Bespoke Service</span>
+                <h2 class="font-serif-luxury text-3xl sm:text-5xl font-bold text-stone-900 dark:text-white">Gifting & Corporate Orders</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-chocoGold to-chocoBronze mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+
+                <!-- Accordion Left -->
+                <div class="lg:col-span-7 faq-group space-y-4">
+
+                    <div class="faq-item bg-white dark:bg-chocoCard border border-stone-200 dark:border-stone-800 rounded-2xl shadow-md overflow-hidden transition-colors">
+                        <button class="faq-toggle w-full flex items-start gap-4 text-start px-5 sm:px-6 py-5">
+                            <span class="w-9 h-9 shrink-0 rounded-xl bg-chocoGold/10 text-chocoGold flex items-center justify-center text-xs font-bold">01</span>
+                            <span class="flex-1 font-serif-luxury text-base sm:text-lg font-bold text-stone-900 dark:text-white leading-snug">Can I customize corporate gifting packages with company branding?</span>
+                            <i class="faq-icon fa-solid fa-chevron-down text-chocoGold text-xs mt-1.5 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-panel hidden px-5 sm:px-6 pb-6">
+                            <p class="text-xs sm:text-sm text-stone-600 dark:text-stone-300 leading-relaxed">
+                                Yes! We specialize in bespoke corporate executive gifting. We offer custom laser-engraved wooden presentation boxes, personalized gift inserts, and custom ribbon branding for your clients and team members.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item bg-white dark:bg-chocoCard border border-stone-200 dark:border-stone-800 rounded-2xl shadow-md overflow-hidden transition-colors">
+                        <button class="faq-toggle w-full flex items-start gap-4 text-start px-5 sm:px-6 py-5">
+                            <span class="w-9 h-9 shrink-0 rounded-xl bg-chocoGold/10 text-chocoGold flex items-center justify-center text-xs font-bold">02</span>
+                            <span class="flex-1 font-serif-luxury text-base sm:text-lg font-bold text-stone-900 dark:text-white leading-snug">What is the minimum order quantity for corporate hampers?</span>
+                            <i class="faq-icon fa-solid fa-chevron-down text-chocoGold text-xs mt-1.5 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-panel hidden px-5 sm:px-6 pb-6">
+                            <p class="text-xs sm:text-sm text-stone-600 dark:text-stone-300 leading-relaxed">
+                                Personalised branding begins at 10 units. For larger programmes—executive suites, client appreciation, and festive distribution—we assign a dedicated gifting manager and staged delivery schedule.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item bg-white dark:bg-chocoCard border border-stone-200 dark:border-stone-800 rounded-2xl shadow-md overflow-hidden transition-colors">
+                        <button class="faq-toggle w-full flex items-start gap-4 text-start px-5 sm:px-6 py-5">
+                            <span class="w-9 h-9 shrink-0 rounded-xl bg-chocoGold/10 text-chocoGold flex items-center justify-center text-xs font-bold">03</span>
+                            <span class="flex-1 font-serif-luxury text-base sm:text-lg font-bold text-stone-900 dark:text-white leading-snug">How much lead time do custom gift boxes require?</span>
+                            <i class="faq-icon fa-solid fa-chevron-down text-chocoGold text-xs mt-1.5 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-panel hidden px-5 sm:px-6 pb-6">
+                            <p class="text-xs sm:text-sm text-stone-600 dark:text-stone-300 leading-relaxed">
+                                Standard ballotins and hampers ship within 48 hours. Fully bespoke crates with engraving, custom ribbon, and printed cards require 7–10 business days from artwork approval.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item bg-white dark:bg-chocoCard border border-stone-200 dark:border-stone-800 rounded-2xl shadow-md overflow-hidden transition-colors">
+                        <button class="faq-toggle w-full flex items-start gap-4 text-start px-5 sm:px-6 py-5">
+                            <span class="w-9 h-9 shrink-0 rounded-xl bg-chocoGold/10 text-chocoGold flex items-center justify-center text-xs font-bold">04</span>
+                            <span class="flex-1 font-serif-luxury text-base sm:text-lg font-bold text-stone-900 dark:text-white leading-snug">Do you include personalised gift messages?</span>
+                            <i class="faq-icon fa-solid fa-chevron-down text-chocoGold text-xs mt-1.5 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-panel hidden px-5 sm:px-6 pb-6">
+                            <p class="text-xs sm:text-sm text-stone-600 dark:text-stone-300 leading-relaxed">
+                                Every gifting order includes a hand-written card in gold-foil script at no additional charge. Corporate clients may supply pre-printed inserts or branded message cards for larger volumes.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Image Card Right -->
+                <div class="lg:col-span-5">
+                    <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-stone-200 dark:border-stone-800 aspect-[4/3] lg:aspect-auto lg:h-[520px]">
+                        <img src="img/f1.webp" alt="Luxury Chocolate Gift Box" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex flex-col justify-end p-7">
+                            <span class="text-chocoGold text-[10px] uppercase font-bold tracking-widest mb-2">Concierge Gifting Desk</span>
+                            <h3 class="font-serif-luxury text-xl sm:text-2xl font-bold text-white mb-3">Hand-tied Ballotins & Engraved Crates</h3>
+                            <p class="text-xs text-stone-300 leading-relaxed mb-5">Weddings, executive appreciation, and milestone celebrations—curated and delivered with white-glove care.</p>
+                            <a href="gifting.html" class="inline-flex items-center justify-center gap-2 py-3 px-5 rounded-xl bg-gradient-to-r from-chocoGold to-chocoBronze text-white font-bold text-[11px] uppercase tracking-wider shadow-lg shadow-chocoGold/30 hover:scale-[1.02] transition w-full sm:w-auto">
+                                Explore Gifting Collections <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ================= SECTION 5: STORAGE & CARE GUIDE ================= -->
+    <section id="care" class="py-24 bg-white dark:bg-chocoDark transition-colors duration-300 scroll-mt-28">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8">
+
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+                <span class="text-chocoGold text-xs font-bold uppercase tracking-widest block">Connoisseur Guide</span>
+                <h2 class="font-serif-luxury text-3xl sm:text-5xl font-bold text-stone-900 dark:text-white">Storage, Freshness & Care</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-chocoGold to-chocoBronze mx-auto rounded-full"></div>
+                <p class="text-stone-600 dark:text-stone-400 text-sm pt-2">Fine chocolate behaves like fine wine. Follow these four principles to protect aroma, snap, and shine.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                <!-- Care 1 -->
+                <div class="bg-stone-50 dark:bg-chocoCard border border-stone-200 dark:border-stone-800 rounded-3xl p-8 shadow-xl hover:border-chocoGold/50 transition group flex flex-col">
+                    <div class="flex items-center justify-between mb-6">
+                        <div class="w-12 h-12 rounded-2xl bg-chocoGold/10 text-chocoGold flex items-center justify-center text-xl group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-temperature-half"></i>
+                        </div>
+                        <span class="font-serif-luxury text-3xl font-bold text-stone-200 dark:text-stone-800">01</span>
+                    </div>
+                    <h3 class="font-serif-luxury text-lg font-bold text-stone-900 dark:text-white mb-2">Ideal Temperature</h3>
+                    <p class="text-xs sm:text-sm text-stone-600 dark:text-stone-400 leading-relaxed">
+                        Store between <strong class="text-stone-900 dark:text-white">15°C and 18°C (59°F–64°F)</strong> in a cool, dry place, away from radiators, ovens, and direct sunlight.
+                    </p>
+                </div>
+
+                <!-- Care 2 -->
+                <div class="bg-stone-50 dark:bg-chocoCard border border-stone-200 dark:border-stone-800 rounded-3xl p-8 shadow-xl hover:border-chocoGold/50 transition group flex flex-col">
+                    <div class="flex items-center justify-between mb-6">
+                        <div class="w-12 h-12 rounded-2xl bg-amber-500/10 text-amber-500 flex items-center justify-center text-xl group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-ban"></i>
+                        </div>
+                        <span class="font-serif-luxury text-3xl font-bold text-stone-200 dark:text-stone-800">02</span>
+                    </div>
+                    <h3 class="font-serif-luxury text-lg font-bold text-stone-900 dark:text-white mb-2">Avoid the Fridge</h3>
+                    <p class="text-xs sm:text-sm text-stone-600 dark:text-stone-400 leading-relaxed">
+                        Refrigeration introduces moisture and odours that cause sugar bloom. If you must chill, seal airtight and let the box reach room temperature before opening.
+                    </p>
+                </div>
+
+                <!-- Care 3 -->
+                <div class="bg-stone-50 dark:bg-chocoCard border border-stone-200 dark:border-stone-800 rounded-3xl p-8 shadow-xl hover:border-chocoGold/50 transition group flex flex-col">
+                    <div class="flex items-center justify-between mb-6">
+                        <div class="w-12 h-12 rounded-2xl bg-chocoGold/10 text-chocoGold flex items-center justify-center text-xl group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-wind"></i>
+                        </div>
+                        <span class="font-serif-luxury text-3xl font-bold text-stone-200 dark:text-stone-800">03</span>
+                    </div>
+                    <h3 class="font-serif-luxury text-lg font-bold text-stone-900 dark:text-white mb-2">Keep Airtight</h3>
+                    <p class="text-xs sm:text-sm text-stone-600 dark:text-stone-400 leading-relaxed">
+                        Cocoa butter absorbs surrounding aromas. Reseal opened ballotins in an airtight container and keep them away from spices, coffee, and strong cheeses.
+                    </p>
+                </div>
+
+                <!-- Care 4 -->
+                <div class="bg-stone-50 dark:bg-chocoCard border border-stone-200 dark:border-stone-800 rounded-3xl p-8 shadow-xl hover:border-chocoGold/50 transition group flex flex-col">
+                    <div class="flex items-center justify-between mb-6">
+                        <div class="w-12 h-12 rounded-2xl bg-amber-500/10 text-amber-500 flex items-center justify-center text-xl group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-hourglass-half"></i>
+                        </div>
+                        <span class="font-serif-luxury text-3xl font-bold text-stone-200 dark:text-stone-800">04</span>
+                    </div>
+                    <h3 class="font-serif-luxury text-lg font-bold text-stone-900 dark:text-white mb-2">Shelf Life</h3>
+                    <p class="text-xs sm:text-sm text-stone-600 dark:text-stone-400 leading-relaxed">
+                        Dark bars keep 12 months; milk and white chocolate 6–9 months; fresh cream truffles are best enjoyed within 3–4 weeks of delivery.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- Serving Tip Strip -->
+            <div class="mt-10 bg-gradient-to-r from-chocoRich to-chocoDark border border-stone-800 rounded-3xl p-8 sm:p-10 shadow-2xl">
+                <div class="flex flex-col sm:flex-row items-start sm:items-center gap-6">
+                    <div class="w-14 h-14 shrink-0 rounded-2xl bg-chocoGold/15 text-chocoGold flex items-center justify-center text-2xl">
+                        <i class="fa-solid fa-mug-hot"></i>
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="font-serif-luxury text-xl sm:text-2xl font-bold text-white mb-2">Sommelier's Serving Tip</h3>
+                        <p class="text-xs sm:text-sm text-stone-300 leading-relaxed">
+                            Remove your chocolates from storage 15–20 minutes before serving. At room temperature the cocoa butter softens, releasing the delicate floral and fruity notes of single-origin cacao.
+                        </p>
+                    </div>
+                    <a href="products.html" class="shrink-0 w-full sm:w-auto text-center py-3 px-6 rounded-xl bg-gradient-to-r from-chocoGold to-chocoBronze text-white font-bold text-[11px] uppercase tracking-wider shadow-lg shadow-chocoGold/30 hover:scale-[1.02] transition">
+                        Shop Origin Bars
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ================= SECTION 6: STILL NEED HELP / CONTACT ================= -->
+    <section id="help" class="py-24 bg-stone-100 dark:bg-[#161616] transition-colors duration-300 scroll-mt-28">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8">
+
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+                <span class="text-chocoGold text-xs font-bold uppercase tracking-widest block">Concierge Support</span>
+                <h2 class="font-serif-luxury text-3xl sm:text-5xl font-bold text-stone-900 dark:text-white">Still Have a Question?</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-chocoGold to-chocoBronze mx-auto rounded-full"></div>
+                <p class="text-stone-600 dark:text-stone-400 text-sm pt-2">Our chocolate sommeliers respond to every enquiry within one business day.</p>
+            </div>
+
+            <!-- Contact Option Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+
+                <div class="bg-white dark:bg-chocoCard border border-stone-200 dark:border-stone-800 rounded-3xl p-8 shadow-xl text-center hover:border-chocoGold/50 transition">
+                    <div class="w-14 h-14 mx-auto rounded-2xl bg-chocoGold/10 text-chocoGold flex items-center justify-center text-xl mb-5">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <h3 class="font-serif-luxury text-lg font-bold text-stone-900 dark:text-white mb-2">Phone Concierge</h3>
+                    <p class="text-xs text-stone-600 dark:text-stone-400 mb-4 leading-relaxed">Mon–Sat, 10:00 AM – 8:00 PM</p>
+                    <a href="tel:18002226838" class="text-xs font-bold text-chocoGold hover:underline uppercase tracking-wider">1-800-CACAO-VELVET</a>
+                </div>
+
+                <div class="bg-white dark:bg-chocoCard border border-stone-200 dark:border-stone-800 rounded-3xl p-8 shadow-xl text-center hover:border-chocoGold/50 transition">
+                    <div class="w-14 h-14 mx-auto rounded-2xl bg-amber-500/10 text-amber-500 flex items-center justify-center text-xl mb-5">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <h3 class="font-serif-luxury text-lg font-bold text-stone-900 dark:text-white mb-2">Email Enquiries</h3>
+                    <p class="text-xs text-stone-600 dark:text-stone-400 mb-4 leading-relaxed">Replies within 24 business hours</p>
+                    <a href="mailto:concierge@cacaovelvet.com" class="text-xs font-bold text-chocoGold hover:underline uppercase tracking-wider">concierge@cacaovelvet.com</a>
+                </div>
+
+                <div class="bg-white dark:bg-chocoCard border border-stone-200 dark:border-stone-800 rounded-3xl p-8 shadow-xl text-center hover:border-chocoGold/50 transition">
+                    <div class="w-14 h-14 mx-auto rounded-2xl bg-chocoGold/10 text-chocoGold flex items-center justify-center text-xl mb-5">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <h3 class="font-serif-luxury text-lg font-bold text-stone-900 dark:text-white mb-2">Visit the Boutique</h3>
+                    <p class="text-xs text-stone-600 dark:text-stone-400 mb-4 leading-relaxed">742 Avenue Cacao, Suite 400<br>New York, NY 10021</p>
+                    <a href="contact.html" class="text-xs font-bold text-chocoGold hover:underline uppercase tracking-wider">Get Directions</a>
+                </div>
+
+            </div>
+
+            <!-- Enquiry Form Card -->
+            <div class="bg-white dark:bg-chocoCard border border-stone-200 dark:border-stone-800 rounded-3xl p-8 sm:p-10 shadow-2xl">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+
+                    <div class="lg:col-span-5">
+                        <span class="text-chocoGold text-[10px] font-bold uppercase tracking-widest">Direct Line</span>
+                        <h3 class="font-serif-luxury text-2xl sm:text-3xl font-bold text-stone-900 dark:text-white mt-2 mb-4">Ask Our Concierge Team</h3>
+                        <p class="text-xs sm:text-sm text-stone-600 dark:text-stone-400 leading-relaxed">
+                            Whether it's a rare estate release, a wholesale allocation, or a fully branded corporate crate—tell us what you need and we'll curate the answer.
+                        </p>
+                    </div>
+
+                    <div class="lg:col-span-7">
+                        <form onsubmit="handleFormSubmit(event)" class="space-y-5">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                                <div class="space-y-2">
+                                    <label class="text-[11px] font-bold uppercase tracking-wider text-stone-900 dark:text-white">Your Name *</label>
+                                    <input type="text" required placeholder="e.g. Victoria Sterling" class="w-full px-4 py-3.5 rounded-xl bg-stone-50 dark:bg-stone-800 border border-stone-200 dark:border-stone-700 text-stone-900 dark:text-white text-xs focus:outline-none focus:border-chocoGold transition">
+                                </div>
+                                <div class="space-y-2">
+                                    <label class="text-[11px] font-bold uppercase tracking-wider text-stone-900 dark:text-white">Email Address *</label>
+                                    <input type="email" required placeholder="e.g. victoria@company.com" class="w-full px-4 py-3.5 rounded-xl bg-stone-50 dark:bg-stone-800 border border-stone-200 dark:border-stone-700 text-stone-900 dark:text-white text-xs focus:outline-none focus:border-chocoGold transition">
+                                </div>
+                            </div>
+                            <div class="space-y-2">
+                                <label class="text-[11px] font-bold uppercase tracking-wider text-stone-900 dark:text-white">Your Question *</label>
+                                <textarea rows="4" required placeholder="Please describe your question about shipping, origins, gifting, or storage..." class="w-full px-4 py-3.5 rounded-xl bg-stone-50 dark:bg-stone-800 border border-stone-200 dark:border-stone-700 text-stone-900 dark:text-white text-xs focus:outline-none focus:border-chocoGold transition"></textarea>
+                            </div>
+                            <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-chocoGold to-chocoBronze text-white font-bold text-xs uppercase tracking-wider shadow-xl shadow-chocoGold/30 hover:scale-[1.01] active:scale-[0.99] transition">
+                                Submit Question <i class="fa-solid fa-paper-plane ml-2"></i>
+                            </button>
+                            <div id="formSuccess" class="hidden text-center text-xs text-chocoGold font-bold mt-2">
+                                Thank you! Your question has been received. Our concierge will contact you shortly.
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ================= ADVANCED DARK FOOTER ================= -->
+    <footer class="bg-[#0b0907] text-stone-400 pt-16 pb-12 border-t border-stone-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 pb-16 border-b border-stone-800/60">
+                
+                <!-- Col 1: Brand Info & Social Icons -->
+                <div class="space-y-4">
+                    <div class="flex items-center gap-2.5">
+                        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-chocoGold to-chocoRich flex items-center justify-center text-white font-bold text-lg shadow-lg shadow-chocoGold/30">
+                            <i class="fa-solid fa-cookie-bite"></i>
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="font-serif-luxury text-lg font-bold text-white tracking-tight leading-none">Cacao & Velvet</span>
+                            <span class="text-[10px] uppercase tracking-widest text-chocoGold font-semibold mt-0.5">Imported Confectionery</span>
+                        </div>
+                    </div>
+                    <p class="text-xs sm:text-sm text-stone-400 leading-relaxed max-w-sm">
+                        Specialty chocolate and confectionery import store bringing rare single-origin estates, Swiss truffles, and Belgian pralines directly to connoisseurs.
+                    </p>
+                    <div class="flex items-center gap-3 pt-2">
+                        <a href="#" class="w-9 h-9 rounded-xl bg-stone-900 border border-stone-800 flex items-center justify-center text-stone-400 hover:text-chocoGold hover:border-chocoGold transition"><i class="fa-brands fa-facebook-f text-xs"></i></a>
+                        <a href="#" class="w-9 h-9 rounded-xl bg-stone-900 border border-stone-800 flex items-center justify-center text-stone-400 hover:text-chocoGold hover:border-chocoGold transition"><i class="fa-brands fa-instagram text-xs"></i></a>
+                        <a href="#" class="w-9 h-9 rounded-xl bg-stone-900 border border-stone-800 flex items-center justify-center text-stone-400 hover:text-chocoGold hover:border-chocoGold transition"><i class="fa-brands fa-twitter text-xs"></i></a>
+                    </div>
+                </div>
+
+                <!-- Col 2: Navigation -->
+                <div class="space-y-4">
+                    <h4 class="text-white text-xs font-bold uppercase tracking-widest">Navigation</h4>
+                    <ul class="space-y-3 text-xs font-medium">
+                        <li><a href="index.html" class="hover:text-chocoGold transition">Home 1 (Specialty)</a></li>
+                        <li><a href="home-2.html" class="hover:text-chocoGold transition">Home 2 (Artisan)</a></li>
+                        <li><a href="#about" class="hover:text-chocoGold transition">About Us</a></li>
+                        <li><a href="#brands" class="hover:text-chocoGold transition">Imported Brands</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Collections -->
+                <div class="space-y-4">
+                    <h4 class="text-white text-xs font-bold uppercase tracking-widest">Collections</h4>
+                    <ul class="space-y-3 text-xs font-medium">
+                        <li><a href="#products" class="hover:text-chocoGold transition">Products by Origin</a></li>
+                        <li><a href="#gifting" class="hover:text-chocoGold transition">Luxury Gifting</a></li>
+                        <li><a href="#faq" class="hover:text-chocoGold transition">FAQ Assistance</a></li>
+                        <li><a href="#contact" class="hover:text-chocoGold transition">Enquiry Form</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Get in Touch -->
+                <div class="space-y-4">
+                    <h4 class="text-white text-xs font-bold uppercase tracking-widest">Concierge</h4>
+                    <ul class="space-y-3 text-xs">
+                        <li>
+                            <a href="mailto:concierge@cacaovelvet.com" class="flex items-center gap-2.5 hover:text-chocoGold transition">
+                                <i class="fa-solid fa-envelope text-chocoGold text-sm w-4"></i> concierge@cacaovelvet.com
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tel:18002226838" class="flex items-center gap-2.5 hover:text-chocoGold transition">
+                                <i class="fa-solid fa-phone text-chocoGold text-sm w-4"></i> 1-800-CACAO-VELVET
+                            </a>
+                        </li>
+                        <li>
+                            <div class="flex items-start gap-2.5">
+                                <i class="fa-solid fa-location-dot text-chocoGold text-sm w-4 mt-0.5"></i>
+                                <span class="leading-relaxed">742 Avenue Cacao, Suite 400, New York, NY 10021</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Bottom Copyright & Policies -->
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-stone-500 gap-4">
+                <p>&copy; 2026 Cacao & Velvet Specialty Chocolate Import Store. All rights reserved.</p>
+                <div class="flex gap-6">
+                    <a href="#" class="hover:text-stone-400 transition">Privacy Policy</a>
+                    <a href="#" class="hover:text-stone-400 transition">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script Utilities -->
+    <script>
+        // Toggle Mobile Menu
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            const icon = document.getElementById('menuIcon');
+            menu.classList.toggle('hidden');
+            if(menu.classList.contains('hidden')) {
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            } else {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-xmark');
+            }
+        }
+
+        // Dark/Light Theme Switcher
+        function toggleTheme() {
+            const html = document.documentElement;
+            if (html.classList.contains('dark')) {
+                html.classList.remove('dark');
+                localStorage.theme = 'light';
+            } else {
+                html.classList.add('dark');
+                localStorage.theme = 'dark';
+            }
+        }
+
+        // RTL / LTR Switcher
+        function toggleRTL() {
+            const html = document.documentElement;
+            const btnText = document.getElementById('rtlBtnText');
+            const mobileRtlText = document.getElementById('mobileRtlText');
+            if (html.getAttribute('dir') === 'rtl') {
+                html.setAttribute('dir', 'ltr');
+                if(btnText) btnText.innerText = 'RTL';
+                if(mobileRtlText) mobileRtlText.innerText = 'Switch RTL';
+                localStorage.dir = 'ltr';
+            } else {
+                html.setAttribute('dir', 'rtl');
+                if(btnText) btnText.innerText = 'LTR';
+                if(mobileRtlText) mobileRtlText.innerText = 'Switch LTR';
+                localStorage.dir = 'rtl';
+            }
+        }
+
+        // Form Submit Handler
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            const successDiv = document.getElementById('formSuccess');
+            successDiv.classList.remove('hidden');
+            e.target.reset();
+            setTimeout(() => {
+                successDiv.classList.add('hidden');
+            }, 6000);
+        }
+
+        // FAQ Accordion
+        document.querySelectorAll('.faq-toggle').forEach(function (btn) {
+            btn.addEventListener('click', function () {
+                const item = btn.closest('.faq-item');
+                const panel = item.querySelector('.faq-panel');
+                const icon = item.querySelector('.faq-icon');
+                const group = item.closest('.faq-group');
+                const isOpen = !panel.classList.contains('hidden');
+
+                // Close siblings in the same group
+                if (group) {
+                    group.querySelectorAll('.faq-item').forEach(function (other) {
+                        if (other !== item) {
+                            const otherPanel = other.querySelector('.faq-panel');
+                            const otherIcon = other.querySelector('.faq-icon');
+                            if (otherPanel) otherPanel.classList.add('hidden');
+                            if (otherIcon) otherIcon.style.transform = 'rotate(0deg)';
+                            other.classList.remove('border-chocoGold/60');
+                        }
+                    });
+                }
+
+                if (isOpen) {
+                    panel.classList.add('hidden');
+                    icon.style.transform = 'rotate(0deg)';
+                    item.classList.remove('border-chocoGold/60');
+                } else {
+                    panel.classList.remove('hidden');
+                    icon.style.transform = 'rotate(180deg)';
+                    item.classList.add('border-chocoGold/60');
+                }
+            });
+        });
+
+        // Check initial theme preference
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+        }
+
+        // Check initial RTL preference
+        if (localStorage.dir === 'rtl') {
+            document.documentElement.setAttribute('dir', 'rtl');
+            if(document.getElementById('rtlBtnText')) document.getElementById('rtlBtnText').innerText = 'LTR';
+            if(document.getElementById('mobileRtlText')) document.getElementById('mobileRtlText').innerText = 'Switch LTR';
+        }
+    </script>
+</body>
+</html>
